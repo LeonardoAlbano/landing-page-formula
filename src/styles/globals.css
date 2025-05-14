@@ -112,6 +112,39 @@
   --sidebar-ring: oklch(0.554 0.135 66.442);
 }
 
+@layer utilities {
+  .text-heading-hg {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  .text-heading-xl {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  .text-heading-lg {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  .text-heading-md {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  .text-heading-sm {
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  .text-heading-xs {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
