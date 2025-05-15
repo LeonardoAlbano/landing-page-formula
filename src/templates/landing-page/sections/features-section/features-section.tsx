@@ -3,9 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../../../../components/ui/button";
 
-export default function FeatureSection() {
+import { RefObject } from "react";
+
+type FeatureSectionProps = {
+  sectionRef: RefObject<HTMLElement | null>;
+};
+
+export default function FeatureSection({ sectionRef }: FeatureSectionProps) {
   return (
-    <section className="container bg-gray-700 grid gap-6 md:grid-cols-2 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+    <section
+      ref={sectionRef}
+      className="container bg-gray-700 grid gap-6 md:grid-cols-2 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8"
+    >
       <div className="flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
         <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">
           Simples
