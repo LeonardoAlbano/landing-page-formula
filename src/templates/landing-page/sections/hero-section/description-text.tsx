@@ -13,7 +13,7 @@ export function DescriptionText({ children, className }: DescriptionTextProps) {
   return (
     <p
       className={cn(
-        "text-gray-300 leading-relaxed",
+        "text-gray-300 font-medium leading-relaxed",
         className ? className : "font-semibold text-base text-left"
       )}
     >

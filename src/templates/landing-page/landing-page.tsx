@@ -6,6 +6,7 @@ import CustomerStorySection from "./sections/customer-story-section/customer-sto
 import FeatureSection from "./sections/features-section/features-section";
 import HeroSection from "./sections/hero-section/hero-section";
 import SupportSection from "./sections/support-section/support-section";
+import SocialProofSection from "./sections/social-proof-section/social-proof-section";
 
 export default function LandingPage() {
   const featureRef = useRef<HTMLElement>(null);
@@ -18,6 +19,7 @@ export default function LandingPage() {
     <article className="flex flex-col gap-10 md:gap-20">
       <HeroSection onScrollToFeature={scrollToFeature} />
       <FeatureSection sectionRef={featureRef} />
+      <SocialProofSection />
       <SupportSection />
       <CustomerStorySection />
       <CallToActionSection />
